@@ -75,37 +75,37 @@
 % \renewcommand{\datename}{Fecha}
 
 
-%% Use (and optionally edit if necessary) this .cfg if you
+%% Use (and optionally edit if necessary) this .tex if you
 %% want to use an author-year reference style like APA(6)
 %% for your publication list
-% \input{pubs-authoryear.cfg}
+% \input{pubs-authoryear.tex}
 
-%% Use (and optionally edit if necessary) this .cfg if you
+%% Use (and optionally edit if necessary) this .tex if you
 %% want an originally numerical reference style like IEEE
 %% for your publication list
-\input{pubs-num.cfg}
+%\input{pubs-num.tex}
 
 %% sample.bib contains your publications
-\addbibresource{sample.bib}
+%\addbibresource{sample.bib}
 
 \begin{document}
-\name{Marissa Mayer}
-\tagline{Business Woman \& Proud Geek}
+\name{Radu Daia}
+\tagline{Software Engineer}
 % Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
 %% You can add multiple photos on the left or right
-\photoR{2.5cm}{mmayer-wikipedia-cc-by-2_0}
+%photoR{2.5cm}{mmayer-wikipedia-cc-by-2_0}
 % \photoL{2cm}{Yacht_High,Suitcase_High}
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{mmayer@yahoo-inc.com}
+  \email{radu.daia@pm.me}
 %   \phone{000-00-0000}
-  \mailaddress{Address, Street, 00000 County}
-  \location{Sunnyvale, CA}
-  \homepage{marissamayr.tumblr.com}
-  \twitter{@marissamayer}
-  \linkedin{marissamayer}
-%   \github{github.com/mmayer} % I'm just making this up though.
+  %\mailaddress{Address, Street, 00000 County}
+  %\location{Sunnyvale, CA}
+  \homepage{rdaia.ro}
+  %\twitter{@marissamayer}
+  \linkedin{radu-daia}
+   \github{radudaia} % I'm just making this up though.
 %   \orcid{0000-0000-0000-0000} % Obviously making this up too.
   %% You can add your own arbitrary detail with
   %% \printinfo{symbol}{detail}[optional hyperlink prefix]
@@ -141,33 +141,47 @@
 
 \cvsection{Experience}
 
-\cvevent{President \& CEO}{Yahoo!}{July 2012 -- Ongoing}{Sunnyvale, CA}
+\cvevent{Senior Embedded Software Engineer}{Tremend Software Consulting}{August 2022 -- Ongoing}{Bucharest, RO}
+Projects:
 \begin{itemize}
-\item Led the \$5 billion acquisition of the company with Verizon -- the entity which believed most in the immense value Yahoo!\ has created
-\item Acquired Tumblr for \$1.1 billion and moved the company's blog there
-\item Built Yahoo's mobile, video and social businesses from nothing in 2011 to \$1.6 billion in GAAP revenue in 2015
-\item Tripled the company's mobile base to over 600 million monthly active users and generated over \$1 billion of mobile advertising revenue last year
+\item Secure IoT Platform (internal project)
+\item \href{https://www.aristocratgaming.com/us/}{Aristocrat Gaming} [Nov 2022 - Jan 2023]
+\item Automotive Linux BSP (\href{https://www.nxp.com/products/processors-and-microcontrollers/s32-automotive-platform/s32g-vehicle-network-processors:S32G-PROCESSORS}{NXP Semiconductors}) [Feb 2023 - ongoing]
 \end{itemize}
 
 \divider
 
-\cvevent{Vice President of Location \& Services}{Google}{Oct 2010 -- July 2012}{Palo Alto, CA}
+\cvevent{Teaching Assistant}{Polytechnic University of Bucharest}{Feb 2017 -- Ongoing}{Bucharest, RO}
+Subjects:
 \begin{itemize}
-\item Position Google Maps as the world leader in mobile apps and navigation
-\item Oversaw 1000+ engineers and product managers working on Google Maps, Google Places and Google Earth
+\item Computer Systems Architecture
+\item Parallel Architecture Programming
 \end{itemize}
 
 \divider
 
-\cvevent{Vice President of Search Products \& UX}{Google}{2005 --  2010}{Palo Alto, CA}
+\cvevent{R\&D Senior Software Engineer}{Keysight}{August 2021 -- July 2022}{Bucharest, RO}
+\begin{itemize}
+    \item \href{https://www.keysight.com/us/en/products/network-test/protocol-load-test/ixload.html}{ixLoad} project
+\end{itemize}
 
 \divider
 
-\cvevent{Product Manager \& UI Lead}{Google}{Oct 2001 -- July 2005}{Palo Alto, CA}
+\cvevent{Senior Software Engineer \& Technical Product Owner}{Harman}{Dec 2015 -- August 2021 }{Bucharest, RO}
+Automotive infotainment projects development:
+\begin{itemize}
+    \item BMW NBTevo
+    \item BMW MGU 2018 / 2021
+    \item BMW MGU 2022 / IDC 2023 / IDC 2024    
+\end{itemize}
+Additionally, participated in RFQs/RFIs for VW/AUDI and Daimler.
+\\
+\divider
+
+\cvevent{Software Engineer}{JLG Consulting}{Mar 2015 -- Nov 2015}{Bucharest, RO}
 
 \begin{itemize}
-\item Appointed by the founder Larry Page in 2001 to lead the Product Management and User Interaction teams
-\item Optimized Google's homepage and A/B tested every minor detail to increase usability (incl.~spacing between words, color schemes and pixel-by-pixel element alignment)
+\item \href{https://www.eurocontrol.int/tool/toolkit-air-traffic-management-occurrence-investigation}{TOKAI} project for Air Traffic Management
 \end{itemize}
 
 % \divider
@@ -179,118 +193,116 @@
 % \item Developed targeted advertisement in order to use user's search queries and show them related ads
 % \end{itemize}
 
-\cvsection{A Day of My Life}
+\cvsection{Certifications}
 
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-% Some ad-hoc tweaking to adjust the labels so that they don't overlap
-\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
-\wheelchart{1.5cm}{0.5cm}{%
-  10/13em/accent!30/Sleeping \& dreaming about work,
-  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
-  5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
-  20/11em/accent!40/Spending time with family,
-  5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
-  30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
-  5/8em/accent!20/Baking cupcakes
-}
+\cvevent{KNX Partner}{KNX Association}{Jan 2024}{}
+
+\cvevent{iSAQB Certified Professional for Software Architecture - Foundation Level® (CPSA-F®)}{International Software Architecture Qualification Board (iSAQB)}{Oct 2023}{}
+
+%\divider
 
 % use ONLY \newpage if you want to force a page break for
 % ONLY the currentc column
-\newpage
+%\newpage
 
-\cvsection{Publications}
+%\cvsection{Publications}
 
 %% Specify your last name(s) and first name(s) as given in the .bib to automatically bold your own name in the publications list.
 %% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
 %% You can specify multiple names, especially if you have changed your name or if you need to highlight multiple authors.
-\mynames{Lim/Lian\bibnamedelima Tze,
-  Wong/Lian\bibnamedelima Tze,
-  Lim/Tracy,
-  Lim/L.\bibnamedelimi T.}
+%\mynames{Lim/Lian\bibnamedelima Tze,
+%  Wong/Lian\bibnamedelima Tze,
+%  Lim/Tracy,
+%  Lim/L.\bibnamedelimi T.}
 %% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
 
-\nocite{*}
+%\nocite{*}
 
-\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+%\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
 
-\divider
+%\divider
 
-\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
+%\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Research}}, type=article]
 
-\divider
+%\divider
 
-\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+%\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
 
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
 \switchcolumn
 
-\cvsection{Life Philosophy}
-\begin{quote}
-``If you don't have any shadows, you're not standing in the light.''
-\end{quote}
+%\cvsection{Life Philosophy}
+%\begin{quote}
+%``If you don't have any shadows, you're not standing in the light.''
+%\end{quote}
 
-\cvsection{Most Proud of}
+\cvsection{Skills}
 
-\cvachievement{\faTrophy}{Courage I had}{to take a sinking ship and try to make it float}
-
-\divider
-
-\cvachievement{\faHeartbeat}{Persistence \& Loyalty}{I showed despite the hard moments and my willingness to stay with Yahoo after the acquisition}
-
-\divider
-
-\cvachievement{\faChartLine}{Google's Growth}{from a hundred thousand searches per day to over a billion}
-
-\divider
-
-\cvachievement{\faFemale}{Inspiring women in tech}{Youngest CEO on Fortune's list of 50 most powerful women}
-
-\cvsection{Strengths}
-
-\cvtag{Hard-working (18/24)}
-\cvtag{Persuasive}\\
-\cvtag{Motivator \& Leader}
+\cvtag{software engineering}
+\cvtag{data structures}
+\cvtag{algorithms}
+\cvtag{software architecture}\\
+\cvtag{computer architecture}
+\cvtag{embedded systems}
+\cvtag{x86}
+\cvtag{ARM}
+\cvtag{system design}
+\cvtag{automotive}
+\cvtag{networking}
+\cvtag{operating systems}
+\cvtag{data analysis}
+\cvtag{scientific research}
 
 \divider\smallskip
 
-\cvtag{UX}
-\cvtag{Mobile Devices \& Applications}
-\cvtag{Product Management \& Marketing}
+\cvtag{C}
+\cvtag{Python}
+\cvtag{Linux}
+\cvtag{Yocto}
+\cvtag{Bash}
+\cvtag{CMake}
+\cvtag{C++}
+\cvtag{C\#}
+\cvtag{\LaTeX}
+\cvtag{Assembly}
+\cvtag{git}
+\cvtag{CUDA}
+\cvtag{MPI}
+\cvtag{Apptainer/Singularity}
+\cvtag{Matlab}
+\cvtag{SQL}
+\cvtag{KNX}
+
+\divider\smallskip
+
+\cvtag{product management}
+\cvtag{project management}
+\cvtag{teaching}
+\cvtag{public speech}
+\cvtag{open source}
 
 \cvsection{Languages}
-
+\cvskill{Romanian}{5}
 \cvskill{English}{5}
-% \divider
-
-\cvskill{Spanish}{4}
-% \divider
-
-\cvskill{German}{3.5} %% supports X.5 values.
-
+\cvskill{French}{3}
+\cvskill{German}{1.5} %% supports X.5 values.
 
 \cvsection{Education}
 
-\cvevent{M.S.\ in Computer Science}{Stanford University}{Sept 1997 -- June 1999}{}
+\cvevent{PhD Student in Computer Science \& Engineering}{Polytechnic University of Bucharest}{Oct 2021 -- Ongoing}{}
 
-\divider
+\divider\smallskip
 
-\cvevent{B.S.\ in Symbolic Systems}{Stanford University}{Sept 1993 -- June 1997}{}
+\cvevent{CERN School of Computing Alumnus}{CERN}{Sept 2022}{Krakow, PL}
+\begin{itemize}
+    \item Software Engineering \& Computational Physics
+\end{itemize}
 
-\newpage
+\divider\smallskip
 
-\cvsection{Referees}
+\cvevent{B.S. \& M.S.\ in Computer Science \& Engineering}{Polytechnic University of Bucharest}{Oct 2012 -- Sept 2018}{}
 
-% \cvref{name}{email}{mailing address}
-\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-{Address Line 1\\Address line 2}
-
-\divider
-
-\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
-{Address Line 1\\Address line 2}
 
 \end{paracol}
 
